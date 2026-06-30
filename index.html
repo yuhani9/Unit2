@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unit 2 Definition Drill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Practical English 3</p>
+        <h1>Unit 2 Definition Drill</h1>
+      </div>
+      <div class="score-panel" aria-live="polite">
+        <span id="scoreText">0 / 0</span>
+        <small>correct</small>
+      </div>
+    </header>
+
+    <nav class="study-links" aria-label="Study tools">
+      <a href="mock-quiz.html">Mock quiz</a>
+      <a href="unit2-cram-sheet.html">Cram sheet</a>
+    </nav>
+
+    <section class="workspace" aria-label="Vocabulary practice">
+      <aside class="side-panel">
+        <div class="control-group">
+          <label for="unitFilter">Unit</label>
+          <select id="unitFilter">
+            <option value="all">Unit 2 all</option>
+            <option value="2-1">Unit 2-1</option>
+            <option value="2-2">Unit 2-2</option>
+            <option value="missed">Missed only</option>
+          </select>
+        </div>
+
+        <div class="segmented" role="group" aria-label="Mode">
+          <button class="mode-button active" data-mode="type" type="button">Type</button>
+          <button class="mode-button" data-mode="choice" type="button">Choice</button>
+          <button class="mode-button" data-mode="flash" type="button">Flash</button>
+        </div>
+
+        <div class="meter-block">
+          <div class="meter-label">
+            <span>Progress</span>
+            <span id="progressText">0%</span>
+          </div>
+          <div class="meter"><span id="progressBar"></span></div>
+        </div>
+
+        <div class="stats-grid">
+          <div>
+            <strong id="cardCount">0</strong>
+            <span>cards</span>
+          </div>
+          <div>
+            <strong id="missCount">0</strong>
+            <span>missed</span>
+          </div>
+        </div>
+
+        <button id="shuffleButton" class="quiet-button" type="button">Shuffle</button>
+        <button id="resetButton" class="quiet-button" type="button">Reset score</button>
+      </aside>
+
+      <section class="drill-panel">
+        <div class="card-stage">
+          <div class="card-meta">
+            <span id="unitBadge">Unit 2</span>
+            <span id="posBadge">part of speech</span>
+          </div>
+
+          <p class="prompt-label">English definition</p>
+          <div id="definition" class="definition">Loading...</div>
+
+          <div id="answerArea" class="answer-area"></div>
+
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+        </div>
+
+        <footer class="action-row">
+          <button id="prevButton" class="icon-button" type="button" aria-label="Previous card" title="Previous card">&lt;</button>
+          <button id="checkButton" class="primary-button" type="button">Check</button>
+          <button id="showButton" class="secondary-button" type="button">Show answer</button>
+          <button id="nextButton" class="icon-button" type="button" aria-label="Next card" title="Next card">&gt;</button>
+        </footer>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

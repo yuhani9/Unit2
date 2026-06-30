@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unit 2 Mock Vocabulary Quiz</title>
+  <link rel="stylesheet" href="mock-quiz.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="kicker">Practical English III</p>
+        <h1>Vocabulary Quiz Unit 2</h1>
+        <p class="sub">Past-quiz style trainer for tomorrow's test</p>
+      </div>
+      <div class="scorebox">
+        <strong id="score">-- / 20</strong>
+        <span>latest score</span>
+      </div>
+    </header>
+
+    <nav class="toolbar" aria-label="Quiz controls">
+      <a href="index.html">Flash cards</a>
+      <a href="unit2-cram-sheet.html">Cram sheet</a>
+      <button id="newQuiz" type="button">New quiz</button>
+      <button id="gradeQuiz" type="button">Grade</button>
+      <button id="showAnswers" type="button">Show answers</button>
+      <button id="printQuiz" type="button">Print</button>
+    </nav>
+
+    <section class="notice">
+      <strong>Target:</strong>
+      Definitions, word forms, odd-one-out meaning groups, sentence completion, and reusable prefixes/suffixes.
+    </section>
+
+    <form id="quiz" class="quiz" autocomplete="off"></form>
+  </main>
+
+  <script src="mock-quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unit 2 Cram Sheet</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5f6c7b;
+      --line: #d8d3c8;
+      --accent: #1e6b62;
+      --paper: #f5f3ee;
+      --card: #fff;
+      --gold: #b7791f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Yu Gothic UI", "Hiragino Sans", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(1100px, calc(100vw - 28px));
+      margin: 0 auto;
+      padding: 24px 0 44px;
+    }
+
+    header,
+    section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+    }
+
+    header {
+      padding: 22px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.18rem;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      padding-left: 9px;
+      border-left: 4px solid var(--accent);
+      font-size: 1rem;
+    }
+
+    p { margin: 0; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    nav a,
+    button {
+      min-height: 42px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 20px;
+      margin-top: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 10px;
+    }
+
+    .mini {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfaf7;
+    }
+
+    .term {
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.96rem;
+    }
+
+    th,
+    td {
+      padding: 9px;
+      border-bottom: 1px solid #ece8df;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .answer {
+      color: var(--accent);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .target-word {
+      display: inline;
+      padding: 0.04em 0.22em 0.12em;
+      border-radius: 5px;
+      background: linear-gradient(180deg, transparent 42%, #ffe08a 42%);
+      color: #0f3f3a;
+      font-weight: 900;
+    }
+
+    .alert {
+      border-left: 5px solid var(--gold);
+      background: #fff9e8;
+    }
+
+    @media print {
+      body { background: #fff; }
+      nav, button { display: none; }
+      main { width: 100%; padding: 0; }
+      header, section { border: 0; padding: 0; }
+      section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="muted">Practical English III</p>
+      <h1>Unit 2 Cram Sheet</h1>
+      <p>明日の語彙テスト用。過去Quiz形式、Flash Cards、Activity B、iQ Online Practiceをまとめた直前確認シートです。</p>
+    </header>
+
+    <nav>
+      <a href="mock-quiz.html">Mock quiz</a>
+      <a href="index.html">Flash cards</a>
+      <button onclick="window.print()" type="button">Print</button>
+    </nav>
+
+    <section class="alert">
+      <h2>満点のために最優先</h2>
+      <div class="grid">
+        <div class="mini"><span class="term">定義問題</span><br>英語定義の中のキーワードから単語を即答する。</div>
+        <div class="mini"><span class="term">原文穴抜き</span><br>Activity B と iQ Online Practice の文はそのまま出る想定で覚える。</div>
+        <div class="mini"><span class="term">語形変化</span><br>automate/automatic/automated, accumulate/accumulation/accumulative, transaction/transactional/transact は特に危険。</div>
+        <div class="mini"><span class="term">reusable</span><br>prefix/suffix と品詞を聞かれる可能性あり。</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>出る範囲マップ</h2>
+      <table>
+        <thead><tr><th>範囲</th><th>このシートでの場所</th><th>対策する問題タイプ</th></tr></thead>
+        <tbody>
+          <tr><td class="answer">Flash Cards Unit 2-1 / 2-2</td><td>Definitions</td><td>定義から単語を書く、品詞を見る、語形変化</td></tr>
+          <tr><td class="answer">Activity B Unit 2-1 p.37</td><td>Exact Sentences By Source</td><td>原文そのままの穴抜き</td></tr>
+          <tr><td class="answer">Activity B Unit 2-2 p.44</td><td>Exact Sentences By Source</td><td>原文そのままの穴抜き</td></tr>
+          <tr><td class="answer">iQ Online Practice 1</td><td>Exact Sentences By Source</td><td>稀に出るiQ文章の穴抜き</td></tr>
+          <tr><td class="answer">iQ Online Practice 2</td><td>Exact Sentences By Source</td><td>稀に出るiQ文章の穴抜き</td></tr>
+          <tr><td class="answer">Word Families / Reusable</td><td>Word Families / Reusable</td><td>prefix/suffix、品詞、派生語</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Definitions</h2>
+      <table>
+        <thead><tr><th>Answer</th><th>Part</th><th>Definition cue</th></tr></thead>
+        <tbody>
+          <tr><td class="answer">automate</td><td>v.</td><td>use machines and computers instead of people</td></tr>
+          <tr><td class="answer">automatic</td><td>adj.</td><td>controls work without needing a person</td></tr>
+          <tr><td class="answer">benefits</td><td>plural n.</td><td>advantage from a company in addition to money; welfare</td></tr>
+          <tr><td class="answer">discrimination</td><td>n.</td><td>treating somebody or a group less fairly</td></tr>
+          <tr><td class="answer">discriminate</td><td>v.</td><td>treat one person or group worse/better in an unfair way</td></tr>
+          <tr><td class="answer">expertise</td><td>n.</td><td>expert knowledge or skill</td></tr>
+          <tr><td class="answer">gig</td><td>n.</td><td>a job, especially a temporary one</td></tr>
+          <tr><td class="answer">job security</td><td>n. phr.</td><td>the state of having a job that is secure</td></tr>
+          <tr><td class="answer">labor</td><td>n.</td><td>work, especially physical work</td></tr>
+          <tr><td class="answer">on the margins</td><td>idiom</td><td>not included in the main part; fringe</td></tr>
+          <tr><td class="answer">substitute</td><td>v.</td><td>take the place of somebody/something else</td></tr>
+          <tr><td class="answer">substitution</td><td>n.</td><td>using one person or thing in the place of another</td></tr>
+          <tr><td class="answer">take advantage of</td><td>v. phr.</td><td>make use of something well; use an opportunity</td></tr>
+          <tr><td class="answer">the other end of the spectrum</td><td>n. phr.</td><td>the opposite extreme in a range</td></tr>
+          <tr><td class="answer">wage</td><td>n.</td><td>regular amount of money you earn for work</td></tr>
+          <tr><td class="answer">disaggregate</td><td>v.</td><td>separate</td></tr>
+          <tr><td class="answer">aggregate</td><td>v.</td><td>put together into a single group or total</td></tr>
+          <tr><td class="answer">garner</td><td>v.</td><td>obtain or collect</td></tr>
+          <tr><td class="answer">dignity</td><td>n.</td><td>being given honor or respect</td></tr>
+          <tr><td class="answer">dignify</td><td>v.</td><td>make somebody/something seem impressive</td></tr>
+          <tr><td class="answer">accumulate</td><td>v.</td><td>gradually increase over time</td></tr>
+          <tr><td class="answer">accumulation</td><td>n.</td><td>process of gradually increasing or getting more</td></tr>
+          <tr><td class="answer">accumulative</td><td>adj.</td><td>growing by increasing gradually</td></tr>
+          <tr><td class="answer">algorithm</td><td>n.</td><td>set of rules followed to solve a problem</td></tr>
+          <tr><td class="answer">at stake</td><td>idiom</td><td>can be won or lost</td></tr>
+          <tr><td class="answer">degree of</td><td>n. phr.</td><td>amount or level of something</td></tr>
+          <tr><td class="answer">demand</td><td>n.</td><td>desire or need of customers</td></tr>
+          <tr><td class="answer">entry-level</td><td>adj.</td><td>at the lowest rank in a company</td></tr>
+          <tr><td class="answer">freelancer</td><td>n.</td><td>person who works for many different organizations</td></tr>
+          <tr><td class="answer">freelance</td><td>v./n.</td><td>earn money by selling work to several organizations; freelance worker</td></tr>
+          <tr><td class="answer">hypothetical</td><td>adj.</td><td>possible and imagined rather than real and true</td></tr>
+          <tr><td class="answer">hypothesize</td><td>v.</td><td>suggest a way of explaining something</td></tr>
+          <tr><td class="answer">hypothesis</td><td>n.</td><td>idea/explanation not yet proved true</td></tr>
+          <tr><td class="answer">hypothetically</td><td>adv.</td><td>in a possible and imagined situation</td></tr>
+          <tr><td class="answer">scraps</td><td>pl. n.</td><td>small pieces or amounts</td></tr>
+          <tr><td class="answer">supply</td><td>n.</td><td>amount provided or available for use</td></tr>
+          <tr><td class="answer">take a cut</td><td>v. phr.</td><td>keep a share of the money</td></tr>
+          <tr><td class="answer">transaction</td><td>n.</td><td>act of buying or selling</td></tr>
+          <tr><td class="answer">transactional</td><td>adj.</td><td>relating to buying or selling</td></tr>
+          <tr><td class="answer">transact</td><td>v.</td><td>do business with a person or organization</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Exact Sentences By Source</h2>
+      <p class="muted">出題文がそのまま出る範囲。Activity B と iQ Online Practice を分けてあります。</p>
+
+      <h3>Activity B: Unit 2-1 p.37</h3>
+      <table>
+        <thead><tr><th>Answer</th><th>Exact sentence cue</th></tr></thead>
+        <tbody>
+          <tr><td class="answer">expertise</td><td>The job requires expertise in coding and website design.</td></tr>
+          <tr><td class="answer">on the margins</td><td>People without a high school education often live on the margins of society.</td></tr>
+          <tr><td class="answer">take advantage of</td><td>You can take advantage of this new opportunity by visiting our website today!</td></tr>
+          <tr><td class="answer">job security</td><td>I don't have job security, so I can be fired at any time.</td></tr>
+          <tr><td class="answer">benefits</td><td>The job includes benefits such as health insurance and vacation time.</td></tr>
+          <tr><td class="answer">automated</td><td>If your work can be automated, you might be replaced by a robot.</td></tr>
+          <tr><td class="answer">wage</td><td>Many countries have a minimum wage, which is the lowest amount you can be paid for an hour of work.</td></tr>
+          <tr><td class="answer">the other end of the spectrum</td><td>On one sharing website, you can rent a small room in someone's house or, on the other end of the spectrum, you can rent an entire luxury house.</td></tr>
+          <tr><td class="answer">discrimination</td><td>Older people may suffer discrimination when they apply for a new job because some companies prefer to hire young workers.</td></tr>
+          <tr><td class="answer">labor</td><td>The labor market refers to the number of people who are available for work in relation to the number of jobs available.</td></tr>
+          <tr><td class="answer">substitute</td><td>Fast-food restaurants are starting to substitute employees for touch screens to take your order.</td></tr>
+          <tr><td class="answer">gig</td><td>In the gig economy, workers may have many small jobs instead of one full-time job.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Activity B: Unit 2-2 p.44</h3>
+      <table>
+        <thead><tr><th>Answer</th><th>Exact sentence cue</th></tr></thead>
+        <tbody>
+          <tr><td class="answer">algorithm</td><td>The website uses a complex algorithm to decide how many people will want a ride at each hour during the week.</td></tr>
+          <tr><td class="answer">at stake</td><td>It is important to check your resume carefully for errors as there is a lot at stake when you submit a job application.</td></tr>
+          <tr><td class="answer">takes a cut</td><td>When you rent a room on an online website, the software company takes a cut of the money, usually about 1-5%.</td></tr>
+          <tr><td class="answer">entry-level</td><td>Many teenagers work entry-level jobs in supermarkets or fast-food restaurants.</td></tr>
+          <tr><td class="answer">freelancer</td><td>Ahmed quit his job at a newspaper and became a freelancer, so now he writes for many different publications.</td></tr>
+          <tr><td class="answer">accumulated</td><td>After working a number of different gigs, Jing only accumulated a small amount of money in her savings account.</td></tr>
+          <tr><td class="answer">demand</td><td>The demand for hotel rooms has dropped because so many travelers are renting rooms and apartments online.</td></tr>
+          <tr><td class="answer">supply</td><td>House prices go down when there is an increase in the supply of new homes.</td></tr>
+          <tr><td class="answer">degree of</td><td>The degree of risk with a new business depends on the number of competitors in the market.</td></tr>
+          <tr><td class="answer">hypothetical</td><td>Let me ask a hypothetical question: what would you do if you could have any job in the world?</td></tr>
+          <tr><td class="answer">scraps</td><td>At the end of the meal, he removed the last scraps of food from his plate.</td></tr>
+          <tr><td class="answer">transactions</td><td>Websites need strong safety measures to keep financial transactions secure.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>iQ Online Practice 1: Unit 2-1</h3>
+      <table>
+        <thead><tr><th>Answer</th><th>Exact sentence cue</th></tr></thead>
+        <tbody>
+          <tr><td class="answer">job security</td><td>Many older people in today's economy are worried about job security.</td></tr>
+          <tr><td class="answer">wages</td><td>One way that businesses respond to loss in profits is to cut the positions of employees who have high wages.</td></tr>
+          <tr><td class="answer">labor</td><td>This often means that older members of staff who have been in the labor market for longer and have more experience are let go.</td></tr>
+          <tr><td class="answer">discrimination</td><td>While age discrimination is against the law in several countries, the higher pay of older adults can make it hard for them to compete with younger people.</td></tr>
+          <tr><td class="answer">automated</td><td>Many employees lose their job prospects as more and more jobs are automated.</td></tr>
+          <tr><td class="answer">expertise</td><td>Their years of expertise is lost in the workplace.</td></tr>
+          <tr><td class="answer">spectrum</td><td>Without experienced co-workers, younger employees at the other end of the career spectrum lose out because they can't take advantage of the knowledge that these professionals have gained through long careers.</td></tr>
+          <tr><td class="answer">take advantage of</td><td>Companies are taking advantage of more experienced professionals to help grow their business and train new employees.</td></tr>
+          <tr><td class="answer">gig</td><td>Older people seeking jobs are encouraged now to join the gig economy.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>iQ Online Practice 2: Unit 2-2</h3>
+      <table>
+        <thead><tr><th>Answer</th><th>Exact sentence cue</th></tr></thead>
+        <tbody>
+          <tr><td class="answer">entry-level</td><td>I was offered a(n) entry-level position at the company I interned with.</td></tr>
+          <tr><td class="answer">transaction</td><td>I save my receipts from my business trips and check them against every transaction on my bank card.</td></tr>
+          <tr><td class="answer">demand</td><td>Not enough people are going into healthcare, so there is a real demand for qualified nurses and other healthcare workers.</td></tr>
+          <tr><td class="answer">at stake</td><td>Interviews are stressful. There is so much at stake and often only one opportunity to show who you are.</td></tr>
+          <tr><td class="answer">supply</td><td>While there is a need for talented writers in TV and entertainment, there is also a large supply of professionals, so those fields can be very competitive.</td></tr>
+          <tr><td class="answer">scraps</td><td>As a way of making a living, some people collect scraps of metal from construction sites and sell them.</td></tr>
+          <tr><td class="answer">accumulating</td><td>One of the goals of middle-aged people should be of accumulating wealth for their retirement and later years.</td></tr>
+          <tr><td class="answer">hypothetical</td><td>Our professors talk about a lot of hypothetical situations, but there is no substitute for practical experience in an actual workplace.</td></tr>
+          <tr><td class="answer">takes a cut</td><td>Every time you place an online order, the supplier only receives part of the price because the platform takes a cut.</td></tr>
+          <tr><td class="answer">freelancer</td><td>After losing my full-time position, I had to work as a freelancer for a few years. Some people like that lifestyle but I was happy to go back into regular employment again.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Word Families / Reusable</h2>
+      <div class="grid">
+        <div class="mini"><span class="term">automate</span><br>automated / automatic<br><span class="muted">-ed = past participle/adjective, -ic = adjective</span></div>
+        <div class="mini"><span class="term">discrimination</span><br>discriminate<br><span class="muted">-ion = noun, -ate = verb</span></div>
+        <div class="mini"><span class="term">substitute</span><br>substitution<br><span class="muted">-tion = noun</span></div>
+        <div class="mini"><span class="term">aggregate</span><br>disaggregate<br><span class="muted">dis- = apart / away / reverse</span></div>
+        <div class="mini"><span class="term">dignity</span><br>dignify<br><span class="muted">-ity = noun, -ify = verb</span></div>
+        <div class="mini"><span class="term">accumulate</span><br>accumulation / accumulative / accumulating / accumulated<br><span class="muted">-ation = noun, -ive = adjective</span></div>
+        <div class="mini"><span class="term">freelancer</span><br>freelance<br><span class="muted">-er = person</span></div>
+        <div class="mini"><span class="term">hypothetical</span><br>hypothesize / hypothesis / hypothetically<br><span class="muted">-al = adjective, -ly = adverb</span></div>
+        <div class="mini"><span class="term">transaction</span><br>transactional / transact / transactions<br><span class="muted">trans- = across, -al = adjective</span></div>
+      </div>
+    </section>
+    <script>
+      (() => {
+        const exactSection = [...document.querySelectorAll("section")]
+          .find((section) => section.querySelector("h2")?.textContent.includes("Exact Sentences By Source"));
+
+        if (!exactSection) return;
+
+        exactSection.querySelectorAll("tbody tr").forEach((row) => {
+          const answerCell = row.querySelector(".answer");
+          const sentenceCell = row.children[1];
+          if (!answerCell || !sentenceCell) return;
+
+          const answer = answerCell.textContent.trim();
+          if (!answer) return;
+
+          const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          const pattern = new RegExp(`(${escaped})`, "i");
+          sentenceCell.innerHTML = sentenceCell.textContent.replace(pattern, '<span class="target-word">$1</span>');
+        });
+      })();
+    </script>
+  </main>
+</body>
+</html>
